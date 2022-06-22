@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/cleaning_stat/static/css/main.d69aa982.css",
-    "main.js": "/cleaning_stat/static/js/main.e565e8c3.js",
+    "main.js": "/cleaning_stat/static/js/main.5fc27bf7.js",
     "static/media/services_bg.png": "/cleaning_stat/static/media/services_bg.cafd9aa3b04d2e3cf7ea.png",
     "static/media/banner_img.png": "/cleaning_stat/static/media/banner_img.0372bb19a96b918bca44.png",
     "static/media/oqtepa.jpg": "/cleaning_stat/static/media/oqtepa.a79333910a233ffd34e2.jpg",
@@ -49,10 +49,10 @@
     "static/media/source-sans-pro-vietnamese-600-normal.woff2": "/cleaning_stat/static/media/source-sans-pro-vietnamese-600-normal.2a10e8084d8796e01039.woff2",
     "index.html": "/cleaning_stat/index.html",
     "main.d69aa982.css.map": "/cleaning_stat/static/css/main.d69aa982.css.map",
-    "main.e565e8c3.js.map": "/cleaning_stat/static/js/main.e565e8c3.js.map"
+    "main.5fc27bf7.js.map": "/cleaning_stat/static/js/main.5fc27bf7.js.map"
   },
   "entrypoints": [
     "static/css/main.d69aa982.css",
-    "static/js/main.e565e8c3.js"
+    "static/js/main.5fc27bf7.js"
   ]
 }
