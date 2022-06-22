@@ -128,7 +128,7 @@ const FooterNav = props => {
           <Block>
             <Title as={'h5'} color={'white'}>Часы работы</Title>
             <Texts>
-              <p>Пн – Пт 8:00 – 22:00</p>
+              <p>Пн – Вс 8:00 – 22:00</p>
             </Texts>
           </Block>
           <MenuBlock padding>

@@ -22,9 +22,9 @@ const SocialItems = (props) => {
       <Link href={'https://t.me/shedevr_cleaning'} {...props}>
         <Telegram />
       </Link>
-       <Link href={'https://www.instagram.com/shedevr_cleaning/'} {...props}>
+      <Link href={'https://www.instagram.com/shedevr_cleaning/'} {...props}>
         <Instagram />
-       </Link>
+      </Link>
       {/* <Link href={''} {...props}> */}
       {/*  <Facebook size={20} color={'transparent'} /> */}
       {/* </Link> */}

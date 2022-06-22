@@ -59,7 +59,7 @@ const RequestReport = props => {
     <RequestBox>
       <AnimationOnScroll animateIn={'animate__fadeInUp'} delay={300} animateOnce>
         <FieldWrapper>
-          <Title as={'h1'} withGradient>COMMERCIAL & OFFICE CLEANING</Title>
+          <Title as={'h1'} withGradient style={{ textAlign: 'center' }}>УСЛУГИ ХИМЧИСТКИ И СТИРКИ</Title>
         </FieldWrapper>
       </AnimationOnScroll>
       <AnimationOnScroll animateIn={'animate__fadeInUp'} delay={500} animateOnce>

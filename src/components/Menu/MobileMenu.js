@@ -1,7 +1,7 @@
 
 import React from 'react'
 import styled from 'styled-components'
-import { Menu, X } from 'react-feather'
+import { Menu, Phone, X } from 'react-feather'
 
 import hexToRgba from 'utils/hexToRgba'
 import { LAYOUT_PADDING, phones } from 'constants/constants'
@@ -167,8 +167,6 @@ const MobileMenu = () => {
     }
   }, [menuIsOpen])
 
-  const phoneValue = phones[1].value
-  const phoneText = phones[1].name
   return (
     <Wrapper>
       <IconTrigger onClick={onMenuOpen}>
@@ -197,14 +195,18 @@ const MobileMenu = () => {
             })}
           </MenuList>
           <Connection>
-            <ConnectionTexts>
-              <TelNumber>
-                <a href={`tel:${phoneValue}`}>{phoneText}</a>
-              </TelNumber>
-              <Hour>
-                До 21:00
-              </Hour>
-            </ConnectionTexts>
+            {phones.map((i, key) => {
+              return (
+                <ConnectionTexts key={key}>
+                  <TelNumber>
+                    <a href={`tel:${i.value}`}>{i.name}</a>
+                  </TelNumber>
+                  <Hour>
+                    До 22:00
+                  </Hour>
+                </ConnectionTexts>
+              )
+            })}
             <Socials>
               <SocialItems />
             </Socials>

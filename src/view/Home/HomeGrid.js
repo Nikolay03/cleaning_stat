@@ -9,6 +9,8 @@ import * as ROUTES from 'constants/routes'
 import GetCallBanner from 'components/GetCallBanner/GetCallBanner'
 import BgBanner from 'assets/bg_banner.png'
 import Office from 'assets/office.jpg'
+import FabButton from '../../components/ui/FabButton'
+import { Phone } from 'react-feather'
 
 const Wrapper = styled.div`
   padding: 160px 0px 120px 0px;
@@ -65,6 +67,9 @@ const HomeGrid = props => {
         <GetCallBanner />
       </GetCall>
       <PartnersSection />
+      <FabButton>
+        <Phone size={23} color={'transparent'} />
+      </FabButton>
     </>
   )
 }

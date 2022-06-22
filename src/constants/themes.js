@@ -78,7 +78,7 @@ const themes = (breakpoints) => {
     },
     fontSize: {
       primary: laptopM ? '14px' : '16px',
-      large: tabletL ? '27px' : laptopM ? '3.9vw' : '60px',
+      large: tabletL ? '27px' : laptopM ? '3.6vw' : '50px',
       biggest: tabletL ? '24px' : laptopM ? '3.3vw' : '36px',
       medium: tabletL ? '23px' : laptopM ? '26px' : '30px',
       capitalBig: tabletL ? '18px' : '28px',

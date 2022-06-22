@@ -57,7 +57,7 @@ const Socials = styled.div`
   display: grid;
   grid-gap: 15px;
   align-items: center;
-  grid: 1fr / repeat(1, 1fr);
+  grid: 1fr / repeat(2, 1fr);
   & svg {
     fill: #fff;
   }

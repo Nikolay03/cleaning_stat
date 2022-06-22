@@ -18,7 +18,7 @@ const OrderButton = ({ children, ...props }) => {
         {...props}
         themeType={'gradient'}
       >
-        {children || 'Заказать услугу'}
+        {children || 'Позвонить'}
       </Button>
     </a>
   )
