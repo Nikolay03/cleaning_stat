@@ -106,7 +106,7 @@ const Socials = styled.div`
   display: grid;
   grid-gap: 30px;
   align-items: center;
-  grid: 1fr / repeat(3, min-content);
+  grid: 1fr / repeat(2, min-content);
   & svg {
     fill: ${({ theme }) => theme.background.secondary};
   }

@@ -56,9 +56,9 @@ const ServiceItem = ({ data }) => {
           <Image objectFit={'contain'} src={Drip} alt={'banner'} style={dripStyle} />
           <p>{data.text}</p>
         </Li>
-        <div style={{ fontSize: '25px', marginLeft: '25px' }}>
-          <p>Цена:  <span style={{ fontWeight: '600' }}>{data.price}</span> сум</p>
-        </div>
+        {/* <div style={{ fontSize: '25px', marginLeft: '25px' }}> */}
+        {/*  <p>Цена:  <span style={{ fontWeight: '600' }}>{data.price}</span> сум</p> */}
+        {/* </div> */}
       </Texts>
     </Box>
   )

@@ -67,9 +67,6 @@ const HomeGrid = props => {
         <GetCallBanner />
       </GetCall>
       <PartnersSection />
-      <FabButton>
-        <Phone size={23} color={'transparent'} />
-      </FabButton>
     </>
   )
 }

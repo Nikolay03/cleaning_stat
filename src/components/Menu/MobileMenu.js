@@ -9,6 +9,7 @@ import { mediaQueries } from 'constants/mediaQueries'
 import menus from 'constants/menus'
 import OrderButton from 'components/Menu/OrderButton'
 import SocialItems from 'components/Menu/SocialItems'
+import FabButton from '../ui/FabButton'
 
 const transition = 'all 200ms ease-out'
 
@@ -168,55 +169,62 @@ const MobileMenu = () => {
   }, [menuIsOpen])
 
   return (
-    <Wrapper>
-      <IconTrigger onClick={onMenuOpen}>
-        <Menu />
-      </IconTrigger>
+    <>
+      <Wrapper>
+        <IconTrigger onClick={onMenuOpen}>
+          <Menu />
+        </IconTrigger>
 
-      <ElonMusk isOpen={menuIsOpen} onClick={onMenuClose} />
-      <MenuContent isOpen={menuIsOpen}>
-        <Header>
-          <CloseButton>
-            <X onClick={onMenuClose} />
-          </CloseButton>
-        </Header>
-        <ContentMenu>
-          <MenuList>
-            {menus.map((item, index) => {
-              const url = item.url
-              const label = item.label
-              return (
-                <a href={`#${url}`} key={index}>
-                  <MenuItem>
-                    <span>{label}</span>
-                  </MenuItem>
-                </a>
-              )
-            })}
-          </MenuList>
-          <Connection>
-            {phones.map((i, key) => {
-              return (
-                <ConnectionTexts key={key}>
-                  <TelNumber>
-                    <a href={`tel:${i.value}`}>{i.name}</a>
-                  </TelNumber>
-                  <Hour>
-                    До 22:00
-                  </Hour>
-                </ConnectionTexts>
-              )
-            })}
-            <Socials>
-              <SocialItems />
-            </Socials>
-            <ButtonWrapper>
-              <OrderButton fullWidth />
-            </ButtonWrapper>
-          </Connection>
-        </ContentMenu>
-      </MenuContent>
-    </Wrapper>
+        <ElonMusk isOpen={menuIsOpen} onClick={onMenuClose} />
+        <MenuContent isOpen={menuIsOpen}>
+          <Header>
+            <CloseButton>
+              <X onClick={onMenuClose} />
+            </CloseButton>
+          </Header>
+          <ContentMenu>
+            <MenuList>
+              {menus.map((item, index) => {
+                const url = item.url
+                const label = item.label
+                return (
+                  <a href={`#${url}`} key={index}>
+                    <MenuItem>
+                      <span>{label}</span>
+                    </MenuItem>
+                  </a>
+                )
+              })}
+            </MenuList>
+            <Connection>
+              {phones.map((i, key) => {
+                return (
+                  <ConnectionTexts key={key}>
+                    <TelNumber>
+                      <a href={`tel:${i.value}`}>{i.name}</a>
+                    </TelNumber>
+                    <Hour>
+                      До 22:00
+                    </Hour>
+                  </ConnectionTexts>
+                )
+              })}
+              <Socials>
+                <SocialItems />
+              </Socials>
+              <ButtonWrapper>
+                <OrderButton fullWidth />
+              </ButtonWrapper>
+            </Connection>
+          </ContentMenu>
+        </MenuContent>
+      </Wrapper>
+      {!menuIsOpen && (
+        <FabButton>
+          <Phone size={23} color={'transparent'} />
+        </FabButton>
+      )}
+    </>
   )
 }
 

@@ -23,13 +23,12 @@ const Fab = styled('a')`
   border-radius: 50%;
   letter-spacing: 0.02857em;
   text-transform: uppercase;
-  z-index: 100;
+  z-index: 1;
   position: fixed;
   bottom: 20px;
   right: 20px;
   color: #fff !important;
-  background: #6770e6 !important;
-  opacity: 0.8;
+  background: #1d7f8a;
   & svg {
     fill: #fff;
   }
