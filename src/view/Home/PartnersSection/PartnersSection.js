@@ -99,7 +99,7 @@ const PartnersSection = props => {
   return (
     <StyledCont as={'section'} id={ROUTES.PARTNERS}>
       <AnimationOnScroll animateIn={'animate__fadeInUp'} animateOnce>
-        <Title as={'h2'}>Партнеры</Title>
+        <Title as={'h2'}>Наши клиенты</Title>
       </AnimationOnScroll>
       <AnimationOnScroll animateIn={'animate__fadeInUp'} animateOnce delay={100}>
         <SliderCont>

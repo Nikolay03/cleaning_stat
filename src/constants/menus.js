@@ -11,7 +11,7 @@ const menus = [
   },
   {
     url: ROUTES.PARTNERS,
-    label: 'Партнеры'
+    label: 'Наши клиенты'
   }
 ]
 
