@@ -2,7 +2,7 @@
   "name": "cleaning",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://nikolay03.github.io/cleaning_static/",
+  "homepage": "https://nikolay03.github.io/cleaning_stat/",
   "dependencies": {
     "react-animation-on-scroll": "^5.1.0",
     "animate.css": "^4.1.1",
