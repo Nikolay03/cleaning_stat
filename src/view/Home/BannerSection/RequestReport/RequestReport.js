@@ -7,6 +7,7 @@ import FieldWrapper from 'components/ui/FieldWrapper'
 import Button from 'components/ui/Button'
 import Title from 'components/elements/Title'
 import { mediaQueries } from 'constants/mediaQueries'
+import { requestAction } from '../../../../containers/Home/actions'
 
 const defaultButtonProps = {
   height: '68px',
@@ -54,6 +55,7 @@ const RequestReport = props => {
 
   const handleSubmit = (event) => {
     event.preventDefault()
+    requestAction(values)
   }
   return (
     <RequestBox>

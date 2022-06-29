@@ -16,6 +16,8 @@ import Glass from 'assets/services/glass.jpg'
 import Express from 'assets/services/express.jpg'
 import Man from 'assets/services/man.jpg'
 import Car from 'assets/services/car.jpg'
+import Jet from 'assets/services/jet.jpg'
+import Hot from 'assets/services/hot.jpg'
 
 const Wrapper = styled.section`
   position: relative;
@@ -128,6 +130,18 @@ const arr = [
     name: 'Выездная автомойка',
     text: 'Трехфазовая мойка, благодаря которой автомобиль становится как новым! \n' +
       'В услугу входит обработка сухим туманом, мойка двигателя и химчистка салона'
+  },
+  {
+    image: Jet,
+    price: '0',
+    name: 'Профессиональная мойка фасадов',
+    text: 'Мойка фасадов любой сложности, с использованием профессиональных инструментов.'
+  },
+  {
+    image: Hot,
+    price: '0',
+    name: 'Химчистка мягкой мебели',
+    text: 'Выезд на дом, безопасно для детей и животных, уже спустя час мебель будет свежей! Очистим ваши ковры и мебель от любых загрязнений с гарантией удаления всех пятен.'
   }
 ]
 
